@@ -45,4 +45,4 @@ find / \
   -path /mnt -prune -o \
   -path /media -prune -o \
   -type f \
-  -exec ls -l {} \; > ${PREFIX}_files.txt
+  -exec ls -l --time-style=long-iso {} \; > ${PREFIX}_files.txt
